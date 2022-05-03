@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="shortcut icon" href="japan-flag.ico">
+    <title>EXP 007 - Formatações e Listas</title>
+  </head>
+  <body>
+      <h1>Revisão Geral</h1>
+      <hr>
+      <h2>Lista de Tags aprendidas até aqui.</h2>
+      <hr>
+      <dl>
+          <dt>Title</dt>
+          <dd>Coloca um título na aba da página.</dd>
+      <hr>
+          <dt>H1, H2, H3... H6</dt>
+          <dd>Títulos do Texto, os quais vão do nível um ao seis.</dd>
+        <hr>
+          <dt>hr</dt>
+          <dd>Coloca linha horizontal na página.</dd>
+        <hr>
+          <dt>p</dt>
+          <dd>Escreve parágrafos com texto.</dd>
+        <hr>
+          <dt>br</dt>
+          <dd>Quebra a linha em um parágrafo.</dd>
+        <hr>
+          <dt>link:favicon</dt>
+          <dd>Insere um favicon, um ícone, na aba da página.</dd>
+        <hr>
+          <dt>img</dt>
+          <dd>Insere uma imagem.</dd>
+        <hr>
+          <dt>strong</dt>
+          <dd>Coloca uma palavra em negrito.</dd>
+        <hr>
+          <dt>em</dt>
+          <dd>Coloca uma palavra em itálico.</dd>
+        <hr>
+          <dt>del</dt>
+          <dd>Risca uma palavra.</dd>
+        <hr>
+          <dt>ins</dt>
+          <dd>Sublinha uma palavra.</dd>
+        <hr>
+          <dt>code</dt>
+          <dd>Escreve um código de uma linguagem de programação.</dd>
+          <dt>pre</dt>
+          <dd>Escreve um texto de forma mono-espaçada; pré-formatação. É usada para organizar os códigos escritos com o comando escrito a cima</dd>
+        <hr>
+          <dt>abbr</dt>
+          <dd>Escreve abreviações e seu significado.</dd>
+        <hr>
+          <dt>big</dt>
+          <dd>Tag <ins>obsoleta</ins> usada para aumentar o tamanho do texto.</dd>
+        <hr>
+          <dt>small</dt>
+          <dd>Usa-se para diminuir o tamanho do texto.</dd>
+        <hr>
+          <dt>q</dt>
+          <dd>Escreve uma citação simples</dd>
+        <hr>
+          <dt>blockquote</dt>
+          <dd>Escreve uma citação em bloco.</dd>
+        <hr>
+          <dt>b</dt>
+          <dd>Tag <em>obsoleta</em> que coloca texto em negrito.</dd>
+        <hr>
+          <dt>i</dt>
+          <dd>Tag <i>obsoleta</i> que coloca o texto em itálico.</dd>
+        <hr>
+          <dt>mark</dt>
+          <dd>Coloca marcação em um texto.</dd>
+        <hr>
+          <dt>sup</dt>
+          <dd>Coloca caractere ou palavra sobrescrito</dd>
+        <hr>
+          <dt>sub</dt>
+          <dd>Coloca caractere ou palavra subscrito.</dd>
+        <hr>
+          <dt>u</dt>
+          <dd>Tag <u>obsoleta</u> que escreve texto sublinhado.</dd>
+        <hr>
+          <dt>bdo</dt>
+          <dd>Escreve texto invertido.</dd>
+        <hr>
+          <dt>li</dt>
+          <dd>Adiciona um item/elemento de uma lista.</dd>
+        <hr>
+          <dt>ol</dt>
+          <dd>Criar lista ordenada.</dd>
+        <hr>
+          <dt>ul</dt>
+          <dd>Criar lista desordenada, ou seja, lista sem numeração, em que a ordem não importa.</dd>
+        <hr>
+          <dt>dl</dt>
+          <dd>Cria uma lista de definições.</dd>
+        <hr>
+          <dt>dt</dt>
+          <dd>Coloca o termo a ser definido em uma lista de definições.</dd>
+        <hr>
+          <dt>dd</dt>
+          <dd>Adiciona definição de um item na lista de definições.</dd>
+        <hr>
+          <dt>a</dt>
+          <dd>Coloca links.</dd>
+      </dl>
+      <br>
+      <h2>Texto Aleatório</h2>
+      <hr>
+      <p>Lorem <em>ipsum</em> dolor sit amet, consectetur <del>adipisicing</del> elit, sed do <i>eiusmod</i> tempor incididunt ut labore et dolore magna aliqua. <br> Ut <strong>enim</strong> ad minim veniam, quis nostrud <u>exercitation</u> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <ins>reprehenderit</ins> in voluptate <strong><bdo dir="rtl">velit</bdo></strong> esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim gid est laborum.</p>
+      <img src="fantasia.png" alt="Segmento Final de Fantasia: Ave Maria.">
+      <br>
+      <h2>Inserindo Código</h2>
+      <hr>
+      <p>Código Escrito em Pascal:</p>
+      <pre>
+        <code>
+          program numerosPerfeitos;
+
+          uses crt;
+
+          var
+           ate, x, soma, i: integer;
+
+          begin
+           clrscr;
+           x := 0;
+           writeln('Numeros perfeitos abaixo de');
+           Readln(ate);
+           repeat
+            x := x + 1;
+            soma := 0;
+            for i := 1 to x - 1 do
+            begin
+           if x mod i = 0 then
+           soma := soma + i;
+            end;
+            if soma = x then
+            begin
+           writeln(x);
+            end;
+           until (x > ate);
+           writeln('Pressione qualquer tecla para finalizar…');
+           readkey;
+          end.
+        </code>
+      </pre>
+      <hr>
+      <h2>Citações</h2>
+      <p>Uma vez um sábio disse que <q>Você deve ser a mudança que quer ver no mundo.</q></p>
+      <p>De acordo com dicionário online de Cambridge, uma das definições "Pulp" é:</p>
+      <blockquote cite="https://dictionary.cambridge.org/pt/dicionario/ingles-portugues/pulp">
+        "Books and magazines that are of low quality in the way they are produced and the stories and articles they contain".
+      </blockquote>
+      <hr>
+      <h2>Lista de Nomes Legais</h2>
+      <ol type="I">
+        <li>Masculinos</li>
+          <ul type="square">
+              <li>Américo</li>
+              <li>Pascal</li>
+              <li>Gaspar</li>
+              <li>Levi</li>
+              <li>Marcos</li>
+          </ul>
+        <li>Femininos</li>
+          <ul type="circle">
+              <li>Olivia</li>
+              <li>Saori</li>
+              <li>Cacau</li>
+              <li>Clara</li>
+              <li>Maria</li>
+          </ul>
+      </ol>
+  </body>
+</html>

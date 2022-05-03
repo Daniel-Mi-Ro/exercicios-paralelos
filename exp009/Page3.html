@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Chanut-Outer-Space-UFO.ico" type="image/x-icon">
+    <title>Treinando a tag <em>Code</em></title>
+</head>
+<body>
+    <h1>Códigos em Java, Python e C++</h1> 
+    <hr>
+    <p>Exemplos de Códigos em:</p> 
+    <ul type="Disc">
+        <li>C++</li>
+        <pre>
+            <code>
+            #include &lt;iostream&gt;
+
+            int main()
+            {
+                std::cout << "Olá, Mundo!" << std::endl;
+                return 0;
+            }
+            </code>
+        </pre>
+        <li>Python</li>
+        <pre>
+            <code>
+             if resultado > 2 and \
+                1 <= 5  and \
+                2 < 5:
+                    print ('Resultado: %f' % d)
+            </code>    
+        </pre>
+        <li>Java</li>
+        <pre>
+            <code>
+                import java.util.ArrayList;
+                import java.util.List;
+
+                public class Main {
+
+                    public static void main(String[] args) {
+                        // Lista de paradigmas
+                        List<String> paradigmas = new ArrayList<>();
+
+                        // Adiciona paradigmas
+                        paradigmas.add("Genérico (1.5)");
+                        paradigmas.add("Funcional (8)");
+
+                        // Abre uma stream
+                        paradigmas.stream()
+                            // Faz todos os textos na lista ficarem em maiúsculo
+                            .map(String::toUpperCase)
+                            // Faz loop em todos paradigmas em maiúsculo.
+                            .forEach(paradigma -> System.out.println(paradigma)); // ou .forEach(System.out::println);
+                }
+            }
+            </code>
+        </pre>
+    </ul>
+    <p>Clique nos links abaixos para:</p>
+    <a href="index.html" target="_self">Voltar para página 1</a>
+    <br>
+    <a href="page2.html" target="_self" rel="prev">Voltar para página 2</a>
+</body>
+</html>

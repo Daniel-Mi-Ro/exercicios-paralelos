@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exp016 - Bordas, Sombras e Responsividade</title>
+    <link rel="shortcut icon" href="Chanut-Outer-Space-UFO.ico" type="image/x-icon">
+    <style>
+
+       
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400&display=swap');
+
+        :root {
+            --cor1:#1b29f5;
+            --cor2:#F55740;
+            --cor3:#626CF0;
+            --cor4:#f0c32295;
+            --cor5:#01F049;
+        }
+
+        * {
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+
+        header {
+            width:100%;
+            min-width:420px;
+            max-width:1536px;
+            background-color:var(--cor2);
+            display:flex;
+            align-items:center;
+            justify-content: space-around;
+            padding: 15px 20px;
+        }
+
+        header > h1  {
+            color:white;
+            font-size:50px;
+            font-family: 'Cinzel', serif;
+            font-weight:700;
+            min-width:200px;
+            margin-right:40px;
+        }
+        
+        nav {
+            display:inline-block;
+            margin:0px 10px;
+            margin-left:40px;
+        }
+        
+        header > nav > a {
+            color:white;
+            text-decoration: none;
+            margin: 0px 5px;
+            font-size: 16px;
+            font-family:'Cinzel', serif;
+            font-weight:400;
+            min-width:200px;
+        }
+
+       body {background-color:white;}
+
+       main {
+           background-color:white;
+           margin:auto;
+           margin-top:20px;
+           min-width:300px;
+           max-width:1050px;
+
+           padding:20px;
+       }
+
+       main > article > h1 {
+           font-family:'EB Garamond', serif;
+           font-weight:700;
+           font-size:30px;
+           margin-bottom:15px;
+       }
+
+       main > article > p {
+           text-align: justify;
+           text-indent:30px;
+           line-height:25px;
+           font-size:19px;
+           font-family:'Alegreya Sans', sans-serif;
+           font-weight:400;
+           margin-top: 10px;
+       }
+
+       img {
+           display:block;
+           margin:auto;
+           margin-top:20px;
+           margin-bottom:20px;
+           width:100%; 
+           border-radius:25px;
+       }
+
+       aside {
+           max-width:500px;
+           margin:auto;
+           margin-top:20px;
+           margin-bottom:20px;
+           padding:10px;
+           padding-left:20px;
+           background-color:rgba(245, 16, 16, 0.977);
+           border-radius:20px;
+       }
+
+       aside > h2 {
+           max-width:1010px;
+           margin-top:-10px;
+           margin-bottom:15px;
+           margin-left:-10px;
+           font-family:'EB Garamond', serif;
+           font-weight:600;
+           color: white;
+           background-color:red;
+           border-radius:20px; 
+           padding:5px 20px;
+        }
+
+       aside > ul {
+           list-style-position:inside; 
+           font-family:'Alegreya Sans', sans-serif;
+           font-weight:400; 
+           font-size:18px;
+           line-height:24px;
+           color:white;
+        }
+
+       footer {
+            background-color: var(--cor2);  
+            color:white;
+            padding:10px;  
+            text-align: center;
+            font-size:12px;
+            font-family:'Cinzel', serif;
+            font-weight:400;
+            
+            border-top-left-radius:250px;
+            border-top-right-radius:250px;
+       }
+
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Radio Literária</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Artigos</a>
+            <a href="#">Gêneros</a>
+            <a href="#">Autores</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Como dois e dois são quatro - Ferreira Gular</h1>
+            <p>Mais uma noite como todas as anteriores. Pego minha caneca de café cheia, acendo meu ultimo cigarro e corro pra velha janela do quarto. Observo a noite fria e chuvosa, até parece confortável por um momento, se não fossem as dezenas de preocupações que me desmotivam a cada dia.</p>
+            <p>Penso em você, mesmo sabendo o quão longe está de mim, sinto aquele amor que continua a me desgraçar intensamente a cada dia, e penso quando enfim poderei te ter comigo. Sei lá, o café chega ao fim e trago a ultima ponta, nada muda. É como se eu fosse passar por isso mais uns longos anos a frente.</p>
+            <picture>
+                <source media="(max-width:1024px)" srcset="fantasiapq.png">
+                <img src="fantasia.png" alt="Imagens Aleatória">
+            </picture>
+            <p>Cada vez mais tenho a sensação de incertezas e inseguranças e tento me manter firme apesar disso. Algumas coisas parecem dar certo e maioria não, tipo você.Então após 10 minutos refletindo, largo tudo, fecho a janela e volto pro meu mundo dentro do quarto. Não sei até quando, não sei o porquê, só sei que tá tudo tão errado e quero me livrar disso o quanto antes. E tu não tem nem ideia do quanto, amor meu.</p>
+            <aside>
+                <h2>Outros poemas que você pode gostar</h2>
+                <ul>
+                    <li>Vou-me embora para Pasárgada - Manuel Bandeira</li>
+                    <li>Sobre um Poema - Herberto Helder</li>
+                    <li>Profundamente - Manuel Bandeira</li>
+                    <li>Não sei dançar - Manuel Bandeira</li>
+                    <li>Canção do Exílio - Gonçalves Dias</li>
+                    <li>Contrariedades - Cesário Verde</li>
+                    <li>Aniversário - Álvaro Campos</li>
+                    <li>Amar - Florbela Espanca</li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <p>Desenvolvido por Smirnov Son o' Kowalski para fins estudantis</p>
+    </footer>
+</body>
+</html>

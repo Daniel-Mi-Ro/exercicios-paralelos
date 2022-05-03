@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando o modelo de caixas</title>
+    <style>
+    * {
+        margin:auto;
+        background-color: blanchedalmond;
+    }
+
+
+    h1 {
+        width:500px;
+        background-color:rgb(182, 47, 47);
+        color: white;
+        text-align:center; 
+
+        padding-top:5px;
+        padding-bottom:5px;
+
+        border-width:3px;
+        border-style:dotted;
+
+        outline-width:4px;
+        outline-style:dashed;
+        outline-color:blue;
+
+        margin-top:10px;
+        margin-bottom:10px;
+    }   
+
+    p {
+        width:1000px;
+        background-color:white;
+        text-align: justify;
+        text-indent:2em;
+
+        padding:6px;
+        margin-top:5px;
+    }
+
+    p::first-letter {font-size:20px;}
+    p::first-line {background-color:rgb(10, 190, 181);}
+
+    a {
+       display:block;
+       text-align:center;
+       margin:5px;
+    }
+
+    a:link {color:orange;}
+    a:visited {color:darkgrey;}
+    a:hover {color:aqua}
+    a:active {color:greenyellow;}
+    a:focus {color:hotpink}
+    a::before {content:"♬";}
+    a::after {content:"♬";}
+
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur voluptatibus non quas, et dicta eum modi officiis beatae consectetur iure eveniet odio perspiciatis veniam doloremque. Tenetur ex ipsam sequi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde facilis quam soluta explicabo tenetur repellendus atque hic, exercitationem impedit vel minus alias ipsum aut quasi, laborum, facere fugiat similique.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium reprehenderit sit cum porro? Numquam officiis, omnis laboriosam eaque iusto praesentium molestias perspiciatis, eveniet sed, illo ipsum temporibus voluptatum autem amet.</p>
+    <a href="https://www.youtube.com/watch?v=UVuYEX0mZ0M">Música Celta</a>
+</body>
+</html>
