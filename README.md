@@ -1,0 +1,2 @@
+# exxercicios-paralelos
+ 
