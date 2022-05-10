@@ -10,8 +10,6 @@
     --cor1:#D3D3D3;
     --cor2:#2F9E79;
     --cor3:#6bb2c2;
-    --cor4:#EB5276;
-    --cor5:#EB675B;
 }
 
 * {
@@ -31,7 +29,7 @@ header {
    background-repeat:no-repeat;
    background-size:auto;
    background-attachment: fixed;
-   color:black);
+   color:white;
 
 }
 
@@ -53,6 +51,8 @@ section {
     padding:40px;
     font-size:18px;
     font-family: var(--fonte03);
+
+    color: white;
 }
 
 section.normal {
@@ -64,11 +64,7 @@ section.estrofe {
     padding:10px;
     max-width: 250px;
     max-height:200px;
-    background-color:rgba(0, 0, 0, 0.071);
-}
-
-section#img02 > section.estrofe  {
-    background-color: rgba(0, 0, 0, 0);;
+    background-color:rgba(0, 0, 0, 0.325);
 }
 
 section.imagem {
@@ -80,18 +76,45 @@ section#img01 {
     background-position:center center;
     background-size:cover;
     background-repeat: no-repeat;
-    background-attachment:scroll;
+    background-attachment:fixed;
 }
+
 
 section#img02 {
-    align-content: flex-end;
-    background-image: url("imagens/wallpaper04.jpg");
-    background-position:center center;
+    background-image: url("imagens/wallpaper05.jpg");
     background-size:cover;
-    color:white;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
+section#img03 {
+    align-content: flex-end;
+    background-image: url("imagens/wallpaper04.jpg");
+    background-position:center top;
+    background-size:cover;
+    background-attachment:fixed;
+}
 
+section#img03 > section.estrofe  {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+section#img04 {
+    background-image:url("imagens/wallpaper07.jpg");
+    background-position:center center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: rgb(93, 182, 217);
+    color:white;
+    font-family:var(--fonte03);
+    text-align: center;
+    padding:30px;
+    font-size:20px;
+}
 
 
 
