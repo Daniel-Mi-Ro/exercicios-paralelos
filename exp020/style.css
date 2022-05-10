@@ -83,7 +83,7 @@ section#img01 {
 section#img02 {
     background-image: url("imagens/wallpaper05.jpg");
     background-size:cover;
-    background-position:center center;
+    background-position:right center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -91,7 +91,7 @@ section#img02 {
 section#img03 {
     align-content: flex-end;
     background-image: url("imagens/wallpaper04.jpg");
-    background-position:center top;
+    background-position:left center;
     background-size:cover;
     background-attachment:fixed;
 }
